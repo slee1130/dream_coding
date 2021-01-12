@@ -194,7 +194,7 @@ p {
 }
 
 .home__contact:hover {
-    background-color: var(--color-orange);
+    background-color: var(--color-light-grey);
 }
 
 /* Section common */
@@ -460,8 +460,8 @@ p {
 }
 
 .testimonial__avatar {
-    width: 150px;
-    height: 150px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 
@@ -619,8 +619,8 @@ p {
     }
 
     .testimonial__avatar {
-        width: 120px;
-        height: 120px;
+        width: 50px;
+        height: 50px;
     }
 
     .testimonial__avatar:nth-child(even),
