@@ -4,13 +4,13 @@
     --color-white: #ffffff;
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
-    --color-pink: #fe918d;
-    --color-dark-pink: #ff6863;
+    --color-pink: #ee7752;
+    --color-dark-pink: #e73c7e;
     --color-black: #4d4d4d;
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
     --color-light-grey: #7c7979;
-    --color-blue: #73aace;
+    --color-blue: #23a6d5;
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
     --color-black: #000000;
@@ -40,7 +40,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat',sans-serif;
     margin: 0;
 }
 
@@ -108,14 +108,15 @@ p {
 }
 
 #navbar.navbar--dark {
-    background-color: var(--color-pink);
-    padding: 8px;
+    background-color: var(--color-blue);
+    padding: 0px;
 }
 
 .navbar__logo {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
     color: white;
+    padding: 10px;
 }
 
 .navbar__menu {
@@ -132,8 +133,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-    border-color: var(--color-white);
-    background-color: var(--color-dark-pink);
+   text-decoration: underline;
 }
 
 .navbar__toggle-btn {
@@ -147,11 +147,29 @@ p {
 
 /* Home */
 #home {
-    background: url('imgs/home-background.png') center/cover no-repeat;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
     padding: 40px;
     padding-top: 120px;
     text-align: center;
 }
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 .home__avatar {
     width: 250px;
@@ -226,7 +244,7 @@ p {
 
 .major__title{
     font-weight: bold;
-    color: var(--color-dark-pink);
+    color: var(--color-dark-grey);
     font-size: 30px;
 }
 .major__description {
@@ -259,7 +277,11 @@ p {
 /* Skill */
 
 #skills {
-    background-color: var(--color-yellow);
+    background-color: var(--color-blue);
+}
+
+.whitefont{
+    color: white;
 }
 
 .skillset {
@@ -328,7 +350,7 @@ p {
 
 .category__btn.selected,
 .category__btn:hover {
-    background-color: var(--color-pink);
+    background-color: var(--color-blue);
     color: var(--color-white);
 }
 
@@ -467,7 +489,7 @@ p {
 
 /* Contact */
 #contact {
-    background-color: var(--color-pink);
+    background-color: var(--color-blue);
 }
 
 .contact__title,
@@ -500,7 +522,7 @@ p {
     height: 50px;
     font-size: 20px;
     color: var(--color-white);
-    background-color: var(--color-pink);
+    background-color: var(--color-blue);
     border-radius: 50%;
     opacity: 0;
     pointer-events: none;
@@ -511,6 +533,18 @@ p {
     opacity: 1;
     pointer-events: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
